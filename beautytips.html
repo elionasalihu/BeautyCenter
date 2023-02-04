@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width,initial-scale=1,0">
+    <link rel="stylesheet" href="style4.css">
+    <title>BEAUTY TIPS</title>
+  </head>
+  <body id="Beauty Center">
+  <body class="eliona">
+    <div id="es-tips">
+        <p id="es-tip">Beauty tips will appear here</p>
+        <button id="es-next">NEXT</button>
+      </div>
+    <script>
+        const tips = [
+        "Drink plenty of water: Staying hydrated is key for maintaining healthy skin, hair and nails. Aim for 8-10 glasses of water per day.",
+        "Cleanse your skin regularly: Cleaning your face twice a day helps remove dirt, oil and impurities. Use a gentle, non-drying cleanser suitable for your skin type.",
+        "Exfoliate regularly: Exfoliating helps remove dead skin cells, leaving your skin looking brighter and smoother. Aim to exfoliate once or twice a week.",
+        "Moisturize daily: Moisturizing helps keep skin soft, supple and hydrated. Use a moisturizer that is suitable for your skin type.",
+        "Get enough sleep: Aim for 7-9 hours of sleep each night. Getting enough rest helps reduce dark circles and puffiness around your eyes.",
+        "Eat a healthy, balanced diet: A diet that is rich in vitamins, minerals, and antioxidants is essential for overall health, including the health of your skin, hair and nails.",
+        "Avoid smoking: Smoking can cause premature aging and wrinkles. It can also damage your hair and nails.",
+        "Use a face mask: Face masks can help hydrate, brighten or exfoliate your skin. Choose a mask that is suitable for your skin type and use it once or twice a week.",
+        "Take care of your hair: Regular washing, conditioning and deep conditioning can help keep your hair healthy and shiny. Trim split ends regularly.",
+        "Use heat protectants: When using hot styling tools like flat irons, curling irons or blow dryers, always use a heat protectant to prevent damage to your hair.",
+        "Massage your scalp regularly: Massaging your scalp can improve circulation and promote healthy hair growth.",
+        "Keep your nails healthy: Keep your nails trimmed, clean and moisturized. Avoid using harsh chemicals or acetone-based nail polish removers."
+        ];
+
+let currentTip = 0;
+
+document.querySelector("#es-next").addEventListener("click", function() {
+  document.querySelector("#es-tip").innerHTML = tips[currentTip];
+  currentTip = (currentTip + 1) % tips.length;
+});
+</script>
+</body>
+</html>
